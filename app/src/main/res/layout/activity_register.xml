@@ -7,7 +7,7 @@
     tools:context="a10ers.lpd_mobeng10.RegisterActivity">
 
     <EditText
-        android:id="@+id/etRegName"
+        android:id="@+id/etName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -22,7 +22,7 @@
         />
 
     <EditText
-        android:id="@+id/etRegUsername"
+        android:id="@+id/etUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -30,14 +30,14 @@
         android:hint="@string/username"
         tools:layout_editor_absoluteX="31dp"
         tools:layout_editor_absoluteY="59dp"
-        app:layout_constraintLeft_toLeftOf="@id/etRegName"
-        app:layout_constraintTop_toBottomOf="@id/etRegName"
+        app:layout_constraintLeft_toLeftOf="@id/etName"
+        app:layout_constraintTop_toBottomOf="@id/etName"
 
         />
 
 
     <EditText
-        android:id="@+id/etRegPassword"
+        android:id="@+id/etPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -45,8 +45,8 @@
         android:hint="@string/password"
         tools:layout_editor_absoluteX="32dp"
         tools:layout_editor_absoluteY="105dp"
-        app:layout_constraintLeft_toLeftOf="@id/etRegUsername"
-        app:layout_constraintTop_toBottomOf="@id/etRegUsername"
+        app:layout_constraintLeft_toLeftOf="@id/etUsername"
+        app:layout_constraintTop_toBottomOf="@id/etUsername"
         />
 
     <Button
@@ -56,8 +56,8 @@
         android:text="@string/register"
         android:textColor="@android:color/white"
         android:background="?attr/colorPrimary"
-        app:layout_constraintLeft_toLeftOf="@id/etRegPassword"
-        app:layout_constraintTop_toBottomOf="@id/etRegPassword"
-        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@id/etPassword"
+        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="0dp" />
 </android.support.constraint.ConstraintLayout>
