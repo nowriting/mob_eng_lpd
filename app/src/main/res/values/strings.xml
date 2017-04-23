@@ -4,4 +4,5 @@
     <string name="login">Pieteikties</string>
     <string name="password">Parole</string>
     <string name="username">Lietotājvārds</string>
+    <string name="name">Vārds</string>
 </resources>
