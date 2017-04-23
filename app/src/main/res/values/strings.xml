@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">LPD_mobeng10</string>
+    <string name="app_name">LPD Grupa 10</string>
+    <string name="register">Reģistrēties</string>
+    <string name="login">Pieteikties</string>
+    <string name="password">Parole</string>
+    <string name="username">Lietotājvārds</string>
 </resources>
