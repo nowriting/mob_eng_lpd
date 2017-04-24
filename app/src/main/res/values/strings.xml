@@ -5,4 +5,7 @@
     <string name="password">Parole</string>
     <string name="username">Lietotājvārds</string>
     <string name="name">Vārds</string>
+    <string name="settings">Iestatījumi</string>
+    <string name="inventory">Inventorija</string>
+    <string name="placeholder">Šeit būs teksts</string>
 </resources>

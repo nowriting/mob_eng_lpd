@@ -12,7 +12,7 @@ import java.util.Map;
  */
 
 public class LoginRequest extends StringRequest {
-    private static final String LOGIN_REQUEST_URL = "https://show-me-the-money.000webhostapp.com/lpd_login.php";
+    private static final String LOGIN_REQUEST_URL = "https://show-me-the-money.000webhostapp.com/android_app/login_user.php";
     private Map<String, String> params;
 
     public LoginRequest(String username, String password, Response.Listener<String> listener){
