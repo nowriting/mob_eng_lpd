@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                                 String name = jsonResponse.getString("name");
                                 int age = jsonResponse.getInt("age");
 
-                                Intent intent = new Intent(MainActivity.this, UserAreaActivity.class);
+                                Intent intent = new Intent(MainActivity.this, UserMain.class);
                                 intent.putExtra("name", name);
                                 intent.putExtra("username", username);
                                 intent.putExtra("age", age);
