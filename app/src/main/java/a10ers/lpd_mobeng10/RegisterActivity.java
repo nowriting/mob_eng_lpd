@@ -47,7 +47,7 @@ public class RegisterActivity extends AppCompatActivity {
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
                                 builder.setMessage("Reģistrācija neveiksmīga.")
-                                        .setNegativeButton("Retry", null)
+                                        .setNegativeButton("Mēģināt vēlreiz", null)
                                         .create()
                                         .show();
                             }
