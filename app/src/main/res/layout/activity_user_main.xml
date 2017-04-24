@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context="a10ers.lpd_mobeng10.UserMain">
 
+    <!--TODO: wants constraint on TextView-->
+
     <TextView
         android:id="@+id/tvWelcome"
         android:layout_width="wrap_content"
