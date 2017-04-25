@@ -8,4 +8,5 @@
     <string name="settings">Iestatījumi</string>
     <string name="inventory">Inventorija</string>
     <string name="placeholder">Šeit būs teksts</string>
+    <string name="back">Atpakaļ</string>
 </resources>
