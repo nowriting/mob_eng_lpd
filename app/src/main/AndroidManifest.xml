@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".UserMain" />
-        <activity android:name=".InventoryMenu"></activity>
+        <activity android:name=".InventoryMenu" />
+        <activity android:name=".InventoryDisplay"></activity>
     </application>
 
 </manifest>

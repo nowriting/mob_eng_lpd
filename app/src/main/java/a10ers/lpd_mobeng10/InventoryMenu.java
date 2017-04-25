@@ -15,7 +15,7 @@ public class InventoryMenu extends AppCompatActivity {
         setContentView(R.layout.activity_inventory_menu);
 
         final Button bBack = (Button) findViewById(R.id.bBacktoUserMain);
-        final Button bInventoryall = (Button) findViewById(R.id.bInventoryAll);
+        final Button bInventoryAll = (Button) findViewById(R.id.bInventoryAll);
         final Button bInventoryAvailable = (Button) findViewById(R.id.bInventoryAvailable);
         final Button bInventoryReserved = (Button) findViewById(R.id.bInventoryReserved);
         final TextView tvPrompt = (TextView) findViewById(R.id.tvInvenoryMenu);
@@ -29,10 +29,20 @@ public class InventoryMenu extends AppCompatActivity {
             }
         });
 
+
+
         String inventoryallname;
         inventoryallname = "Visa inventorija";
+        bInventoryAll.setText(inventoryallname);
 
-        bInventoryall.setText(inventoryallname);
+        bInventoryAll.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v){
+                Intent registerIntent = new Intent(InventoryMenu.this, InventoryDisplay.class);
+                InventoryMenu.this.startActivity(registerIntent);
+            }
+        });
 
 
     }
