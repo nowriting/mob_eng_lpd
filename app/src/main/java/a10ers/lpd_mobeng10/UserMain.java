@@ -39,5 +39,14 @@ public class UserMain extends AppCompatActivity {
             }
         });
 
+        bInventory.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v){
+                Intent registerIntent = new Intent(UserMain.this, InventoryMenu.class);
+                UserMain.this.startActivity(registerIntent);
+            }
+        });
+
     }
 }

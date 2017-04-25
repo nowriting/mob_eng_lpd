@@ -9,4 +9,8 @@
     <string name="inventory">Inventorija</string>
     <string name="placeholder">Šeit būs teksts</string>
     <string name="back">Atpakaļ</string>
+    <string name="inventoryall">Visa inventorija</string>
+    <string name="inventoryavailable">Pieejamā Inventorija</string>
+    <string name="inventoryreserved">Rezervētā inventorija</string>
+    <string name="makereservation">Rezervēt aprīkojumu</string>
 </resources>

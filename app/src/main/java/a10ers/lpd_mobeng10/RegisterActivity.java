@@ -26,6 +26,7 @@ public class RegisterActivity extends AppCompatActivity {
         final EditText etUsername = (EditText) findViewById(R.id.etUsername);
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
         final Button bRegister = (Button) findViewById(R.id.bRegister);
+        final Button bBack = (Button) findViewById(R.id.bBacktoLogin2);
 
         bRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +62,15 @@ public class RegisterActivity extends AppCompatActivity {
 
                 RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
                 queue.add(registerRequest);
+            }
+        });
+
+        bBack.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v){
+                Intent registerIntent = new Intent(RegisterActivity.this, MainActivity.class);
+                RegisterActivity.this.startActivity(registerIntent);
             }
         });
     }

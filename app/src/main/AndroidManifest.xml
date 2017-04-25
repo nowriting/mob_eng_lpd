@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".UserMain"></activity>
+        <activity android:name=".UserMain" />
+        <activity android:name=".InventoryMenu"></activity>
     </application>
 
 </manifest>
