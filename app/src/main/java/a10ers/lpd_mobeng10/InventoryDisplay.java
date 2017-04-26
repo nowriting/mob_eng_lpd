@@ -44,6 +44,10 @@ public class InventoryDisplay extends AppCompatActivity {
     private static final String TAG_ADD ="address";
     private static final String TAG_AMOUNT  ="item_amount";
     private static final String TAG_PLACE = "item_place";
+    private static final String firstID = "Datubāzes ID: ";
+    private static final String firstNAME = "Lieta: ";
+    private static final String firstAMOUNT = "Pieejamais daudzums: ";
+    private static final String firstPLACE = "Atrašanās vieta: ";
 
     JSONArray inventory = null;
 
@@ -93,17 +97,17 @@ public class InventoryDisplay extends AppCompatActivity {
 
                 HashMap<String,String> items = new HashMap<>();
 
-                items.put(TAG_ID, item_id);
-                items.put(TAG_NAME, item_name);
-                items.put(TAG_AMOUNT, item_amount);
-                items.put(TAG_PLACE, item_place);
+                items.put(TAG_ID, firstID+item_id);
+                items.put(TAG_NAME, firstNAME+item_name);
+                items.put(TAG_AMOUNT, firstAMOUNT+item_amount);
+                items.put(TAG_PLACE, firstPLACE+item_place);
 
                 inventoryList.add(items);
             }
 
             ListAdapter adapter = new SimpleAdapter(
                     InventoryDisplay.this, inventoryList, R.layout.list_item,
-                    new String[]{TAG_ID,TAG_NAME,TAG_AMOUNT, TAG_PLACE},
+                    new String[]{TAG_ID, TAG_NAME, TAG_AMOUNT, TAG_PLACE},
                     new int[]{R.id.id, R.id.name, R.id.amount, R.id.place}
             );
 
