@@ -21,7 +21,8 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".UserMain" />
         <activity android:name=".InventoryMenu" />
-        <activity android:name=".InventoryDisplay"></activity>
+        <activity android:name=".InventoryDisplay" />
+        <activity android:name=".ReserveItem"></activity>
     </application>
 
 </manifest>

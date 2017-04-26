@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="a10ers.lpd_mobeng10.ReserveItem">
+
+    <EditText
+        android:id="@+id/etitemID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:inputType="number"
+        android:hint="@string/itemID"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/etitemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="@string/itemName"
+        app:layout_constraintTop_toBottomOf="@+id/etitemID"
+        app:layout_constraintLeft_toLeftOf="@+id/etitemID"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/etitemAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:inputType="number"
+        android:hint="@string/itemAmount"
+        app:layout_constraintLeft_toLeftOf="@+id/etitemName"
+        app:layout_constraintTop_toBottomOf="@+id/etitemName"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/etitemPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="@string/itemPlace"
+        app:layout_constraintLeft_toLeftOf="@+id/etitemAmount"
+        app:layout_constraintTop_toBottomOf="@+id/etitemAmount"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tvRegEditPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RegEditAdvice"
+        android:textAllCaps="true"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="@+id/etitemPlace"
+        app:layout_constraintTop_toBottomOf="@+id/etitemPlace"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/bSaveItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        app:layout_constraintLeft_toLeftOf="@+id/tvRegEditPrompt"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegEditPrompt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <Button
+        android:id="@+id/bEditItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reserve"
+        app:layout_constraintLeft_toLeftOf="@+id/bSaveItem"
+        app:layout_constraintTop_toBottomOf="@+id/bSaveItem"
+        />
+
+    <Button
+        android:id="@+id/bBacktoInventoryMenu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        app:layout_constraintLeft_toLeftOf="@+id/bEditItem"
+        app:layout_constraintTop_toBottomOf="@+id/bEditItem"
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -41,7 +41,6 @@ public class InventoryDisplay extends AppCompatActivity {
     private static final String TAG_RESULTS="result";
     private static final String TAG_ID = "item_id";
     private static final String TAG_NAME = "item_name";
-    private static final String TAG_ADD ="address";
     private static final String TAG_AMOUNT  ="item_amount";
     private static final String TAG_PLACE = "item_place";
     private static final String firstID = "Datubāzes ID: ";

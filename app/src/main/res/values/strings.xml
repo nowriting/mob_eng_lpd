@@ -14,4 +14,11 @@
     <string name="inventoryreserved">Rezervētā inventorija</string>
     <string name="makereservation">Rezervēt aprīkojumu</string>
     <string name="action_settings">SOME STRING</string>
+    <string name="itemID">Lietas ID nr:</string>
+    <string name="itemName">Lietas nosaukums: ***</string>
+    <string name="itemAmount">Daudzums: </string>
+    <string name="itemPlace">Lietas atrašanas vieta: ***</string>
+    <string name="save">Saglabāt</string>
+    <string name="reserve">Rezervēt</string>
+    <string name="RegEditAdvice">*** : tikai ievadot jaunu lietu sistēmā!</string>
 </resources>

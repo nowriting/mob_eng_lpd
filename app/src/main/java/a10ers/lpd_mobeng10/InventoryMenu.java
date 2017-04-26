@@ -28,12 +28,6 @@ public class InventoryMenu extends AppCompatActivity {
             }
         });
 
-
-
-        String inventoryallname;
-        inventoryallname = "Visa inventorija";
-        bInventoryAll.setText(inventoryallname);
-
         bInventoryAll.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -43,6 +37,15 @@ public class InventoryMenu extends AppCompatActivity {
             }
         });
 
+        /* TODO: provision on fact that different text displayed for user/managment_user */
+
+        String inventoryAllName;
+        inventoryAllName = "Visa inventorija";
+        bInventoryAll.setText(inventoryAllName);
+
+        String inventoryReserveName;
+        inventoryReserveName = "Rezervējumi";
+        bInventoryReserved.setText(inventoryReserveName);
 
     }
 }
