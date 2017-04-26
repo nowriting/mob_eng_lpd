@@ -36,16 +36,11 @@ import android.widget.Button;
 
 public class InventoryDisplay extends AppCompatActivity {
 
-    private static final String item_id = "item_id";
-    private static final String item_name = "item_name";
-    private static final String item_amount = "item_amount";
-    private static final String item_place = "item_place";
-
     String myJSON;
 
     private static final String TAG_RESULTS="result";
-    private static final String TAG_ID = "id";
-    private static final String TAG_NAME = "name";
+    private static final String TAG_ID = "item_id";
+    private static final String TAG_NAME = "item_name";
     private static final String TAG_ADD ="address";
     private static final String TAG_AMOUNT  ="item_amount";
     private static final String TAG_PLACE = "item_place";
@@ -80,7 +75,7 @@ public class InventoryDisplay extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
                 Object o = list.getItemAtPosition(position);
-                Toast.makeText(getApplicationContext(),"your text", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Atzīmēts", Toast.LENGTH_LONG).show();
             }
         });
     }
