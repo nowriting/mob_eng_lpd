@@ -13,4 +13,5 @@
     <string name="inventoryavailable">Pieejamā Inventorija</string>
     <string name="inventoryreserved">Rezervētā inventorija</string>
     <string name="makereservation">Rezervēt aprīkojumu</string>
+    <string name="action_settings">SOME STRING</string>
 </resources>

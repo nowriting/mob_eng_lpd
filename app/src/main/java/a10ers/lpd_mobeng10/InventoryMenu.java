@@ -16,7 +16,6 @@ public class InventoryMenu extends AppCompatActivity {
 
         final Button bBack = (Button) findViewById(R.id.bBacktoUserMain);
         final Button bInventoryAll = (Button) findViewById(R.id.bInventoryAll);
-        final Button bInventoryAvailable = (Button) findViewById(R.id.bInventoryAvailable);
         final Button bInventoryReserved = (Button) findViewById(R.id.bInventoryReserved);
         final TextView tvPrompt = (TextView) findViewById(R.id.tvInvenoryMenu);
 
