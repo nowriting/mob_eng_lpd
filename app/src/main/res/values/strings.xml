@@ -7,7 +7,7 @@
     <string name="name">Vārds</string>
     <string name="settings">Iestatījumi</string>
     <string name="inventory">Inventorija</string>
-    <string name="placeholder">Šeit būs teksts</string>
+    <string name="placeholder">Sveicināti savā izvēlnē!</string>
     <string name="back">Atpakaļ</string>
     <string name="inventoryall">Visa inventorija</string>
     <string name="inventoryavailable">Pieejamā Inventorija</string>
@@ -21,4 +21,6 @@
     <string name="save">Saglabāt</string>
     <string name="reserve">Rezervēt</string>
     <string name="RegEditAdvice">*** : tikai ievadot jaunu lietu sistēmā!</string>
+    <string name="userID">Lietotāja ID</string>
+    <string name="change">Rediģēt</string>
 </resources>

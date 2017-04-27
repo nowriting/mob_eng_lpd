@@ -48,5 +48,14 @@ public class UserMain extends AppCompatActivity {
             }
         });
 
+        bSettings.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v){
+                Intent registerIntent = new Intent(UserMain.this, UserSettings.class);
+                UserMain.this.startActivity(registerIntent);
+            }
+        });
+
     }
 }

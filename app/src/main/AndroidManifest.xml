@@ -22,7 +22,8 @@
         <activity android:name=".UserMain" />
         <activity android:name=".InventoryMenu" />
         <activity android:name=".InventoryDisplay" />
-        <activity android:name=".ReserveItem"></activity>
+        <activity android:name=".ReserveItem" />
+        <activity android:name=".UserSettings"></activity>
     </application>
 
 </manifest>

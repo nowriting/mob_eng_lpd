@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="a10ers.lpd_mobeng10.UserSettings"
+    android:background="@drawable/lpd10_bcground"
+    android:backgroundTint="#9FFFFFFF"
+    android:backgroundTintMode="src_over"
+    >
+
+    <EditText
+        android:id="@+id/etUserID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/userID"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/etChangeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/name"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        app:layout_constraintLeft_toLeftOf="@id/etUserID"
+        app:layout_constraintTop_toBottomOf="@id/etUserID"
+
+        />
+
+    <EditText
+        android:id="@+id/etChangeUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/username"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="59dp"
+        app:layout_constraintLeft_toLeftOf="@id/etChangeName"
+        app:layout_constraintTop_toBottomOf="@id/etChangeName"
+
+        />
+
+
+    <EditText
+        android:id="@+id/etChangePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="105dp"
+        app:layout_constraintLeft_toLeftOf="@id/etChangeUsername"
+        app:layout_constraintTop_toBottomOf="@id/etChangeUsername"
+        />
+
+    <Button
+        android:id="@+id/bRegisterChange"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="@string/change"
+        android:textColor="@android:color/white"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="@id/etChangePassword"
+        app:layout_constraintTop_toBottomOf="@id/etChangePassword"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/bBacktoMenu3"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="@string/back"
+        android:textColor="@android:color/white"
+        android:background="?attr/colorPrimaryDark"
+        app:layout_constraintLeft_toLeftOf="@id/bRegisterChange"
+        app:layout_constraintTop_toBottomOf="@id/bRegisterChange"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+</android.support.constraint.ConstraintLayout>
