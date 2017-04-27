@@ -22,7 +22,7 @@ public class EditUser extends StringRequest {
         params.put("user_id", user_id);
         params.put("name", name);
         params.put("username", username);
-        params.put("password", password + "");
+        params.put("password", password);
     }
 
     @Override
