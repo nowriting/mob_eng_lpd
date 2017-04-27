@@ -9,7 +9,11 @@
     android:paddingTop="10dp"
     android:orientation="vertical"
     android:paddingBottom="10dp"
-    tools:context=".InventoryDisplay">
+    tools:context=".InventoryDisplay"
+    android:background="@drawable/lpd10_bcground"
+    android:backgroundTint="#8FFFFFFF"
+    android:backgroundTintMode="src_over"
+    >
 
     <Button
         android:id="@+id/bBacktoInventoryMenu"

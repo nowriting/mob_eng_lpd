@@ -4,6 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/lpd10_bcground"
+    android:backgroundTint="#8FFFFFFF"
+    android:backgroundTintMode="src_over"
+
     tools:context="a10ers.lpd_mobeng10.ReserveItem">
 
     <EditText
@@ -64,6 +68,7 @@
         app:layout_constraintLeft_toLeftOf="@+id/etitemPlace"
         app:layout_constraintTop_toBottomOf="@+id/etitemPlace"
         android:layout_marginTop="10dp"
+        android:gravity="center"
         />
 
     <Button
@@ -76,6 +81,9 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/white"
+        android:background="?attr/colorPrimary"
         />
 
     <Button
@@ -85,6 +93,11 @@
         android:text="@string/reserve"
         app:layout_constraintLeft_toLeftOf="@+id/bSaveItem"
         app:layout_constraintTop_toBottomOf="@+id/bSaveItem"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:background="?attr/colorPrimaryDark"
         />
 
     <Button
@@ -94,6 +107,11 @@
         android:text="@string/back"
         app:layout_constraintLeft_toLeftOf="@+id/bEditItem"
         app:layout_constraintTop_toBottomOf="@+id/bEditItem"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:background="?attr/colorPrimary"
         />
 
 </android.support.constraint.ConstraintLayout>
