@@ -1,7 +1,9 @@
 package a10ers.lpd_mobeng10;
 
+import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -47,6 +49,7 @@ public class InventoryDisplay extends AppCompatActivity {
     private static final String firstNAME = "Lieta: ";
     private static final String firstAMOUNT = "Pieejamais daudzums: ";
     private static final String firstPLACE = "Atrašanās vieta: ";
+    String msgTitle = "Paziņojums";
 
     JSONArray inventory = null;
 
@@ -78,7 +81,21 @@ public class InventoryDisplay extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
                 Object o = list.getItemAtPosition(position);
-                Toast.makeText(getApplicationContext(),"Atzīmēts", Toast.LENGTH_LONG).show();
+             //   Toast.makeText(getApplicationContext(),"Atzīmēts", Toast.LENGTH_LONG).show();
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(InventoryDisplay.this);
+                builder.setTitle(msgTitle);
+                builder.setMessage("Vēlaties veikt rezervāciju?")
+                        .setPositiveButton("Veikt rezervāciju", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent registerIntent = new Intent(InventoryDisplay.this, ReserveItem.class);
+                                InventoryDisplay.this.startActivity(registerIntent);
+                            }
+                        })
+                        .setNegativeButton("Ne tagad", null)
+                        .create()
+                        .show();
             }
         });
     }
