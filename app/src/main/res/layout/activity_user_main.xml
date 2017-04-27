@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="a10ers.lpd_mobeng10.UserMain"
     android:background="@drawable/lpd10_bcground"
-    android:backgroundTint="#8FFFFFFF"
+    android:backgroundTint="#9FFFFFFF"
     android:backgroundTintMode="src_over"
     >
 
