@@ -23,4 +23,5 @@
     <string name="RegEditAdvice">*** : tikai ievadot jaunu lietu sistēmā!</string>
     <string name="userID">Lietotāja ID</string>
     <string name="change">Rediģēt</string>
+    <string name="UserEditAdvice">Aizpildīt tikai maināmās sadaļas!</string>
 </resources>
